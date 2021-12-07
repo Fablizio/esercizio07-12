@@ -1,0 +1,83 @@
+
+
+.App {
+  text-align: center;
+}
+
+.main {
+  background-color: #3c414b;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  padding: 25px;
+  height: 20vmin;
+  width: 20vmin;
+  pointer-events: none;
+  border-radius: 100%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.descriptionP {
+  text-align: center;
+  padding: 15px;
+}
+
+.nome {
+  display: flex;
+  flex-wrap: wrap;
+  top: 27%;
+}
+
+
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.3fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 22px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "WorkingExp Lang Hobby"
+    "WorkingTXT LangTXT HobbyTXT";
+}
+
+.WorkingExp {
+  grid-area: WorkingExp;
+}
+
+.Lang {
+  grid-area: Lang;
+}
+
+.Hobby {
+  grid-area: Hobby;
+}
+
+.WorkingTXT {
+  grid-area: WorkingTXT;
+  text-align: center;
+}
+
+.LangTXT {
+  grid-area: LangTXT;
+  text-align: center;
+}
+
+.HobbyTXT {
+  grid-area: HobbyTXT;
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
